@@ -1,64 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeliApa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <header class="header">
-      <h1 style="font-size: 50px;">BeliApa</h1>
-    </header>
-    <div class="product">
-      <div class="items">
-        <img src="https://koran-jakarta.com/images/article/ini-jenis-bahan-yang-cocok-untuk-tas-sekolah-anak-221223121157.jpg">
-        <h3>Barang1</h3>
-        <p>Rp.99999</p>
-      </div>
-      <div class="items">
-        <img src="https://awsimages.detik.net.id/community/media/visual/2022/06/04/baju-turun-naik-1.jpeg?w=1200">
-        <h3>Barang2</h3>
-        <p>Rp.99999</p>
-      </div>
-      <div class="items">
-        <img src="https://www.blibli.com/friends-backend/wp-content/uploads/2022/08/5-Ciri-Sepatu-Warrior-Asli-Kamu-Wajib-Tahu.jpeg">
-        <h3>Barang3</h3>
-        <p>Rp.99999</p>
-      </div>
-      <div class="items">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Orient_Star_-_Classic.jpg/1200px-Orient_Star_-_Classic.jpg">
-        <h3>Barang5</h3>
-        <p>Rp.99999</p>
-      </div>
-      <div class="items">
-        <img src="https://img.id.my-best.com/contents/4e3f7f625138a85666b5b3fa1e6430b1.jpg?ixlib=rails-4.3.1&q=70&lossless=0&w=1200&h=900&fit=crop&s=fdcccfccc528b44b9de8afda997f8e23">
-        <h3>Barang6</h3>
-        <p>Rp.99999</p>
-      </div>
-      <div class="items">
-        <img src="https://asset-a.grid.id/crop/0x26:569x468/800x600/photo/2020/11/15/1384476074.jpg">
-        <h3>Barang7</h3>
-        <p>Rp.99999</p>
-      </div>
-      <div class="items">
-        <img src="https://img.inews.co.id/media/822/files/inews_new/2022/08/04/jaket_windbreaker.jpg">
-        <h3>Barang8</h3>
-        <p>Rp.99999</p>
-      </div>
-      <div class="items">
-        <img src="https://carisinyal.com/wp-content/uploads/2023/07/advan-stylus-360_.webp">
-        <h3>Barang9</h3>
-        <p>Rp.99999</p>
-      </div>
-      <div class="items">
-        <img src="https://static.jakmall.id/2022/06/images/products/5d1c44/detail/celana-joger-pendek-celana-wanita-celana-pendek-celana-bahan-katun.jpg">
-        <h3>Barang10</h3>
-        <p>Rp.99999</p>
-      </div>
+  <body class="bg-white">
+    <div class="container p-0 border mb-4 mt-4 rounded-3 shadow navigation-bar">
+        <!-- Menu -->
+        <nav class="d-md-flex p-4">
+            <div><h1>BeliApa</h1></div>
+            <div class="ms-auto my-auto">
+                <ul class="list-inline m-0">
+                    <li class="list-inline-item mx-md-3"><a href="#koleksi" class="text-decoration-none navigation-bar">Produk Kami</a></li>
+                    <li class="list-inline-item mx-md-3"><a href="#tentang" class="text-decoration-none navigation-bar">Tentang Kami</a></li>
+                    <li class="list-inline-item mx-md-3"><a href="#keranjang" class="text-decoration-none navigation-bar">Keranjang</a></li>
+
+                </ul>
+            </div>
+        </nav>
     </div>
+
+    <!-- Banner -->
+    <div class="px-4 mb-4">
+        <img src="images/banner.jpg" alt="banner" class="w-100 rounded">
+    </div>
+
+    <!-- Katalog -->
+    <h3 id="koleksi" class="text-center">Koleksi Kami</h3>
+    <div class="text-center w-50 mx-auto fw-light">Berikut ini adalah barang-barang yang tersedia, mulai dari pakaian hingga alat-alat elektronik. Selamat Belanja :)</div>
+
+    <div class="row row-cols-md-3 row-cols-1 gx-5 p-5">
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="images/buku1.jpg" class="card-img-top" alt="barang1">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</p>
+                </div>
+                <div class="card-footer d-md-flex">
+                    <a class="btn btn-sm btn-danger d-block btnBeli">Beli</a>
+                    <span class="ms-auto text-danger fw-bold d-block text-center harga"> Rp99.999</span>
+                </div>
+              </div>
+        </div>
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="images/buku2.jpg" class="card-img-top" alt="barang1">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</p>
+                </div>
+                <div class="card-footer d-md-flex">
+                    <a class="btn btn-sm btn-danger d-block btnBeli">Beli</a>
+                    <span class="ms-auto text-danger fw-bold d-block text-center harga"> Rp99.999</span>
+                </div>
+              </div>
+        </div>
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="images/buku3.jpg" class="card-img-top" alt="barang1">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</p>
+                </div>
+                <div class="card-footer d-md-flex">
+                    <a class="btn btn-sm btn-danger d-block btnBeli">Beli</a>
+                    <span class="ms-auto text-danger fw-bold d-block text-center harga"> Rp99.999</span>
+                </div>
+              </div>
+        </div>
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="images/buku4.jpg" class="card-img-top" alt="barang1">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</p>
+                </div>
+                <div class="card-footer d-md-flex">
+                    <a class="btn btn-sm btn-danger d-block btnBeli">Beli</a>
+                    <span class="ms-auto text-danger fw-bold d-block text-center harga"> Rp99.999</span>
+                </div>
+              </div>
+        </div>
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="images/buku5.jpg" class="card-img-top" alt="barang1">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</p>
+                </div>
+                <div class="card-footer d-md-flex">
+                    <a class="btn btn-sm btn-danger d-block btnBeli">Beli</a>
+                    <span class="ms-auto text-danger fw-bold d-block text-center harga"> Rp99.999</span>
+                </div>
+              </div>
+        </div>
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="images/buku6.jpg" class="card-img-top" alt="barang1">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, velit.</p>
+                </div>
+                <div class="card-footer d-md-flex">
+                    <a class="btn btn-sm btn-danger d-block btnBeli">Beli</a>
+                    <span class="ms-auto text-danger fw-bold d-block text-center harga"> Rp99.999</span>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Tentang Kami -->
+    <div id="tentang" class="px-4 py-4 bg-secondary text-center">
+        <div class="mx-auto w-75">
+            <h3 class="text-white text-center">Tentang Kami</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque ipsum, minus obcaecati fugit magnam repellat a laborum officia dolores, illo cumque praesentium maxime voluptate architecto tempore corporis eius non!</p>
+        </div>
+    </div>
+
     <footer>
-      <p>&copy;kelompok3</p>
+        <div class="text-center p-4 border-top">&copy;2023 kelompok4hasandelondion - BeliApa - Project PW I</div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>
