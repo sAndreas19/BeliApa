@@ -37,7 +37,6 @@ btnBeli.forEach(item => {
 //Button Tambah ke keranjang
 btnKeranjang.forEach(item => {
     item.addEventListener('click', (e) => {
-
         let imageTd = document.createElement('td');
         let image = document.createElement('img');
         image.src = globalData.gambar;
